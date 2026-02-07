@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Akash Yadav">
+    <meta name="description" content="Pro*C Developer & Technical Lead Portfolio - Akash Yadav">
+    <title>Akash Yadav - Systems Architect</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- bootstrap cdns -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- fonts: Caveat (Handwritten) and Fira Code (Envy/Code like) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Fira+Code:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav>
+
+
+            <ul id="menu">
+                <li><a href="#home">home<span>.</span></a></li>
+                <li><a href="#about">about me<span>.</span></a></li>
+                <li><a href="#blog">blog<span>.</span></a></li>
+                <li><a href="#contact">contact<span>.</span></a></li>
+            </ul>
+
+            <div id="toggle">
+                <div class="span">menu</div>
+            </div>
+        </nav>
+
+        <div id="fixed-brand">
+            <a href="#home" class="brand-anim">./Akash_Yadav</a>
+        </div>
+
+
+
+
+
+        </nav>
+
+        <div id="resize">
+            <div class="close-btn">close</div>
+
+            <ul id="menu">
+                <li><a href="#home">home<span>.</span></a></li>
+                <li><a href="#about">about me<span>.</span></a></li>
+                <li><a href="#blog">blog<span>.</span></a></li>
+                <li><a href="#contact">contact<span>.</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Scroll Progress -->
+        <div class="percent">
+            <div class="fill"></div>
+            <div class="counter">
+                <h2></h2>
+            </div>
+        </div>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="hero">
+            <div class="header">
+                <h1 class="line anim-typewriter">I am a developer.</h1>
+                <div class="hero-chart-container mt-5 wow fadeInUp" data-wow-delay="1s">
+                    <canvas id="techChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-down"></div>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="container section">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h2 class="section-title wow fadeInUp text-center mb-5">About Me</h2>
+
+                    <div class="terminal-window wow fadeInUp">
+                        <div class="terminal-header">
+                            <div class="buttons">
+                                <span class="close"></span>
+                                <span class="minimize"></span>
+                                <span class="maximize"></span>
+                            </div>
+                            <div class="title">usr@akash_yadav:~/bio</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="command"><span class="prompt">$</span> cat about_me.txt</p>
+                            <div class="output">
+                                <p>Most developers learn to build upward—stacking frameworks atop abstractions. I chose
+                                    the
+                                    opposite path: I learned to build downward, peeling back layers until I could see
+                                    the
+                                    silicon breathing beneath the code.</p>
+                                <p>It began innocently enough: Java's elegant objects, C++'s controlled memory. But I
+                                    kept
+                                    hitting invisible walls. Why does a pointer store an address? Not just how to
+                                    dereference it—but why did engineers design memory this way in the first place?</p>
+                                <p>So I went deeper.</p>
+                                <p>I remember the first time I typed <code>strace ./my_program</code> on a Linux
+                                    terminal
+                                    and watched a cascade of system calls flood the screen—<code>open()</code>,
+                                    <code>read()</code>, <code>mmap()</code>, <code>brk()</code>—each one a window into
+                                    the
+                                    OS negotiating with hardware on my program's behalf. I didn't just see what
+                                    happened;
+                                    I saw the conversation between user space and kernel space. I ran
+                                    <code>ltrace</code>
+                                    to watch libc functions mediate between my C code and the raw syscall interface. I
+                                    poked <code>/proc/[pid]/maps</code> to visualize memory segments laid out like city
+                                    districts: text, data, heap, stack—each with purpose, each with rules.
+                                </p>
+                                <p>That curiosity led me to Assembly—not as a relic, but as the Rosetta Stone of
+                                    computing. In HLASM, there are no metaphors. A register is a register. An
+                                    instruction is
+                                    a voltage pattern etched in silicon. When I write <code>LA R1,DATA</code>, I'm not
+                                    abstracting—I'm commanding. And suddenly, everything clicked:</p>
+                                <ul>
+                                    <li>Pointers exist because CPUs address memory—it's in their DNA.</li>
+                                    <li>static exists because storage duration matters when every byte has physical
+                                        cost.
+                                    </li>
+                                    <li>JCL isn't "old"—it's a precise contract between human intent and
+                                        batch-processing
+                                        reality.</li>
+                                </ul>
+                                <p>Today, as a Technical Lead at Fiserv, this mindset isn't academic—it's operational.
+                                    When a Pro*C transaction stalls under load, I don't just profile SQL. I trace it
+                                    through Oracle's precompiler, watch how embedded C binds to OCI libraries, inspect
+                                    memory alignment in the generated C stubs, and correlate wait events with mainframe
+                                    dispatching behavior. I see the entire stack—not as separate layers, but as one
+                                    continuous chain of cause and effect.</p>
+                                <h4>Why does this matter to financial systems?</h4>
+                                <p>Because when you're processing $2B in daily transactions, abstractions break. Memory
+                                    leaks become outages. Misaligned cache lines become latency spikes. And "it works on
+                                    my machine" becomes a regulatory incident. My value isn't just writing Pro*C or
+                                    Assembly—it's understanding why the system behaves as it does so I can architect
+                                    solutions that don't just work today, but remain stable, auditable, and performant
+                                    for
+                                    decades.</p>
+                                <p>I don't chase shiny tools. I chase first principles. And in an industry where failure
+                                    means real money lost and trust broken—that depth isn't optional. It's the
+                                    foundation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section id="blog" class="container section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title wow fadeInUp">Thoughts.</h2>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="book-scene wow fadeInUp"
+                        onclick="window.open('https://www.geeksforgeeks.org/cpp/loader-in-c-c/', '_blank')">
+                        <div class="book">
+                            <div class="book-cover">
+                                <div class="cover-content">
+                                    <p style="font-weight: 900; font-size: 2.5rem;">Latest Articles</p>
+                                </div>
+                            </div>
+                            <div class="book-page">
+                                <div class="page-content center-content">
+                                    <div class="blog-entry">
+                                        <h3>Loader in C++</h3>
+                                        <p class="date">Latest: GeeksForGeeks</p>
+                                        <p>Understanding how the loader works in C/C++ execution.</p>
+                                        <code class="read-link">Read Article -></code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER / CONTACT -->
+        <div id="contact" class="footer">
+            <div class="container">
+                <br><br>
+
+                <div class="collab">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="wow fadeInUp">Got something to have a conversation on?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="hr">
+                    <div class="row"></div>
+                </div>
+
+                <br><br>
+
+                <div class="info">
+                    <div class="row">
+                        <div class="col-lg-4" id="personal">
+                            <p class="footer-title wow fadeInUp">ping me</p>
+                            <ul>
+                                <li class="wow fadeInUp" data-wow-delay="0.2s"><a
+                                        href="mailto:meherakash.ai@gmail.com">meherakash.ai@gmail.com</a></li>
+                            </ul>
+                            <br><br>
+                        </div>
+
+                        <div class="col-lg-5" id="media">
+                            <div class="row justify-content-between">
+                                <div class="col-5">
+                                    <p class="footer-title wow fadeInUp" data-wow-delay="0s">follow me</p>
+                                    <ul>
+                                        <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#"
+                                                class="footer-link">linkedin</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-5">
+                                    <p class="footer-title wow fadeInUp" data-wow-delay="0s">explore my</p>
+                                    <ul>
+                                        <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="#"
+                                                class="footer-link">github</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br><br>
+                        </div>
+
+                        <div class="col-lg-4" id="address">
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+    </div>
+
+    <!-- greensock cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
